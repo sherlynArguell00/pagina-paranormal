@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voces del Más Allá | Expedientes Paranormales</title>
+    <style>
+        /* Estilos generales y tema oscuro */
+        body {
+            background-color: #0d0d0d;
+            color: #d1d1d1;
+            font-family: 'Courier New', Courier, monospace; /* Fuente estilo máquina de escribir / expediente */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #000000;
+            border-bottom: 2px solid #8b0000;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #8b0000;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #ff0000;
+        }
+
+        header p {
+            color: #a9a9a9;
+            font-style: italic;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #d1d1d1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #8b0000;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Estilos de las secciones/artículos */
+        article {
+            background-color: #141414;
+            border-left: 4px solid #8b0000;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        article h2 {
+            color: #b22222;
+            margin-top: 0;
+        }
+
+        .meta {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Formulario de reporte */
+        .report-form {
+            background-color: #141414;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .report-form h3 {
+            color: #8b0000;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #aaa;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #000;
+            border: 1px solid #444;
+            color: #fff;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #8b0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #ff0000;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VOCES DEL MÁS ALLÁ</h1>
+        <p>Archivo Abierto de Fenómenos Inexplicables y Paranormales</p>
+    </header>
+
+    <nav>
+        <a href="#expedientes">Expedientes</a>
+        <a href="#avistamientos">Avistamientos</a>
+        <a href="#reportar">Reportar Evento</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Sección de Expedientes -->
+        <section id="expedientes">
+            <article>
+                <h2>Caso 001: La Casa de las Sombras Inclinadas</h2>
+                <div class="meta">Clasificación: Poltergeist | Lugar: Desconocido</div>
+                <p>Durante más de tres décadas, los residentes de esta propiedad reportaron susurros provenientes de las paredes y el movimiento inusual de objetos pesados durante la madrugada (3:33 AM). Las grabaciones de audio revelaron psicofonías con voces que piden ayuda en un idioma extinto.</p>
+            </article>
+
+            <article>
+                <h2>Caso 002: El Pasajero de la Carretera 9</h2>
+                <div class="meta">Clasificación: Aparición | Lugar: Ruta 9</div>
+                <p>Múltiples conductores afirman haber recogido a un autostopista en la misma curva peligrosa de la ruta. Tras avanzar unos kilómetros, el individuo desaparece del asiento del copiloto dejando únicamente una sensación de frío extremo en el vehículo.</p>
+            </article>
+        </section>
+
+        <!-- Formulario para enviar experiencias -->
+        <section id="reportar">
+            <div class="report-form">
+                <h3>¿Has presenciado algo inexplicable?</h3>
+                <p>Envía tu testimonio para que nuestros investigadores analicen tu caso.</p>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre o Pseudónimo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico (Confidencial):</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="tipo">Tipo de Fenómeno:</label>
+                    <input type="text" id="tipo" name="tipo" placeholder="Ej: Fantasma, Ovni, Criptido, Sueño Lúcido">
+
+                    <label for="relato">Describe tu experiencia:</label>
+                    <textarea id="relato" name="relato" rows="5" required></textarea>
+
+                    <button type="submit">Enviar Expediente</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Voces del Más Allá. Todo el contenido está bajo investigación. No nos hacemos responsables por actividad paranormal secundaria.</p>
+    </footer>
+
+</body>
+</html>
